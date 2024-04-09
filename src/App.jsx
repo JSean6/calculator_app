@@ -30,8 +30,8 @@ function App() {
         <div id="display" className="p-2 bg-gray-100 text-right text-lg font-semibold border border-gray-300 rounded-md">
           {displayValue}
         </div>
-        <div className="grid grid-cols-4 gap-3 bg-gray-700 space-x-3 space-y-2">
-          <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md space-x-3 space-y-2" onClick={() => appendToDisplay('7')}>7</button>
+        <div className="grid grid-cols-4 gap-3 p-4 bg-gray-700 ">
+          <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('7')}>7</button>
           <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('8')}>8</button>
           <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('9')}>9</button>
           <button className="col-span-1 p-2 bg-gray-400 hover:bg-gray-500 text-gray-100 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('/')}>÷</button>
@@ -44,10 +44,10 @@ function App() {
           <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('3')}>3</button>
           <button className="col-span-1 p-2 bg-gray-400 hover:bg-gray-500 text-gray-100 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('-')}>-</button>
           <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('0')}>0</button>
-          <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('0')}>00</button>
+          <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('00')}>00</button>
           <button className="col-span-1 p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('.')}>.</button>
           <button className="col-span-1 p-2 bg-gray-400 hover:bg-gray-500 text-gray-100 font-semibold border border-gray-300 rounded-md" onClick={clearDisplay}>AC</button>
-          <button className="col-span-1 p-2 bg-gray-400 hover:bg-gray-500 text-gray-100 font-semibold border border-gray-300 rounded-md" onClick={calculate}>=</button>
+          <button className="col-span-2 p-2 bg-gray-400 hover:bg-gray-500 text-gray-100 font-semibold border border-gray-300 rounded-md" onClick={calculate}>=</button>
           <button className="col-span-1 p-2 bg-gray-400 hover:bg-gray-500 text-gray-100 font-semibold border border-gray-300 rounded-md" onClick={() => appendToDisplay('+')}>+</button>
         </div>
       </div>
